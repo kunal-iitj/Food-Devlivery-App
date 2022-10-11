@@ -37,11 +37,32 @@ class HomeScreen extends StatelessWidget {
           ),
            Center(
             child: Container( 
-              width: 400,
+              width: 270,
               height: 300,
               child: Column( 
                 mainAxisAlignment: MainAxisAlignment.center, 
                 children: <Widget>[
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Login',
+                      style: TextStyle(  
+                        fontSize: 40.0,
+                        color: Colors.white,
+                        fontWeight: FontWeight.bold
+                      )
+                    ),
+                  ),
+
+                  Align(
+                    alignment: Alignment.centerLeft,
+                    child: Text(
+                      'Please login to continue',
+                      style: TextStyle(
+                        color: Colors.grey[400]
+                      ),
+                    ),
+                  ),
                   Padding(
                     padding: const EdgeInsets.all(8.0),
                     child: LoginField(Icon(Icons.person), 'Username'),
